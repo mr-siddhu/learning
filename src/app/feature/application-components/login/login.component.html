@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+
+<div class="container-sm">
+    <div class="row">
+
+        <!-- Register form -->
+        <div class="col-12">
+            <mat-card class="example-card">
+                <form [formGroup]="loginForm" (ngSubmit)="signin()">
+                    <mat-card-header style="justify-content: center;
+            background: rgb(244, 255, 228);
+            padding-bottom: 10px;">
+                        <mat-card-title>Sign In</mat-card-title>
+                    </mat-card-header>
+                    <br>
+
+                    <mat-card-content>
+
+
+                        <div class="row">
+
+                            <div class="col-6">
+                                <mat-form-field appearance="fill">
+                                    <mat-label>Username / Email</mat-label>
+                                    <input formControlName="username" matInput>
+                                </mat-form-field>
+                            </div>
+
+                            <div class="col-6">
+                                <mat-form-field appearance="fill">
+                                    <mat-label>Password</mat-label>
+                                    <input type="password" formControlName="password" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+
+                    </mat-card-content>
+
+                    <mat-card-actions>
+                        <button [disabled]="loginForm.invalid" type="submit" mat-fab extended
+                            color="primary">Log In</button>
+                    </mat-card-actions>
+                </form>
+            </mat-card>
+        </div>
+    </div>
+</div>

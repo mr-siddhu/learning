@@ -1,0 +1,1071 @@
+<div class="container">
+  <div class="row rowDesign">
+    <h2 class="title-text" >1. From Event</h2>
+
+
+
+    <p>It is used to creates an Observable from DOM events</p>
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Add Video</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <button #addbtn class="btn btn-primary">Open</button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>List</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ul id="elContainer1">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">2. Interval and Timer </h2>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Interval</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ul id="elContainer2">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Timer</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Will start after 3 seconds of delay ..</p>
+
+          <ul id="elContainer3">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">3. of & from </h2>
+
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>of()</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>of - converts the arguments to observable sequence</p>
+
+          <ul id="elContainer4">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>from() - Array</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+
+          <p>Turn an array, promise, or iterable into an observable.</p>
+          <ul id="elContainer5">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>from() - Object</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Object to observable.</p>
+          <ul id="elContainer6">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>from() - Promise</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>promise to observable.</p>
+          <ul id="elContainer7">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>from() - String</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>String to observable.</p>
+          <ul id="elContainer8">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">4. To Array </h2>
+
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>toArray()</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Collects all source emissions and emits them as an array when the source completes.</p>
+
+          <p style="color:red">Check output on console</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">5. Custom Observable</h2>
+
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Custom Observable</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ul id="elContainer9">
+
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">6. Map, Pluck & Filter Operator</h2>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>map()</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ul>
+            <p>Applies a given project function to each value emitted by the source Observable, and emits the resulting
+              values as an Observable.</p>
+          </ul>
+
+          <ul id="elContainer10">
+
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>pluck() - by key as name</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p style="color:red">pluck is deprecated in latest versions. use map for nested property </p>
+          <ul>
+            <p>Maps each source value to its specified nested property.</p>
+          </ul>
+          <ul id="elContainer11">
+
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>filter() - by female records</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ul>
+            <p>Filter items emitted by the source Observable by only emitting those that satisfy a specified predicate.
+            </p>
+          </ul>
+          <ul id="elContainer12">
+
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">7. Tap Operator</h2>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>tap()</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ul>
+            <p>Used to perform side-effects for notifications from the source observable</p>
+          </ul>
+
+          <ul id="elContainer13">
+
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">8. Take, TakeLast & TakeUntil Operator</h2>
+    <p>The take, takeUntil, takeWhile & takeLast operators allow us to filter out the emitted values from the
+      observable.</p>
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>take()</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>The take(n) emits the first n values</p>
+          <ul id="elContainer14">
+
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>takeLast()</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>takeLast(n) emits the last n values.</p>
+          <ul id="elContainer15">
+
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>takeUntil(condition)</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>The takeUntil(notifier) keeps emitting the values until it is notified to stop.</p>
+          <ul id="elContainer16">
+
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">9. Retry, RetryWhen, Scan & Delay Operator</h2>
+
+    <div class="col-6">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>retry()</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <br>
+          <button (click)="retryApiCall()" class="btn btn-primary">Retry ()</button>
+
+          <br>
+          <p>Retry an observable sequence a specific number of times should an error occur</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">title</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of postData">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.title}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          Status : <span style="font-weight: bold;"
+            [ngStyle]="apiStatus == 'Data fetched' ? {'color':'green'} : {'color':'red'}"> {{apiStatus}}</span>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+    <div class="col-6">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>retryWhen(), scan() and delay()</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <br>
+          <button (click)="retryWhenApiCall()" class="btn btn-primary">RetryWhen ()</button>
+          <br>
+          <p>RetryWhen - Retry an observable sequence on error based on custom criteria.</p>
+          <p>scan - Useful for encapsulating and managing state. Applies an accumulator (or "reducer function") to each
+            value from the source after an initial state is established -- either via a seed value (second argument), or
+            from the first value from the source.</p>
+          <p>delay - Delays the emission of items from the source Observable by a given timeout or until a given Date.
+          </p>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">title</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of postDataRetryWhen">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.title}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <span>Retry Count with scan() and delay() operator. <span style="font-weight: bold; color: red;">Count :
+              {{retryCount}}</span></span>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">10. debounceTime & distinctUntilChanged Operator</h2>
+
+    <div class="col-6">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>debounceTime() - request will call after 2 seconds</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <br>
+          <div class="form-group mx-sm-3 mb-2">
+            <input #myInput type="text" class="form-control" id="inputPassword2" placeholder="Search">
+          </div>
+          <br>
+          <span>Requested Data: <span style="font-weight: bold;" class="text-success">{{reqData}}</span> </span>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-6">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>distinctUntilChanged() - request will not execute for previous data</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <br>
+          <div class="form-group mx-sm-3 mb-2">
+            <input #myInput1 type="text" class="form-control" id="inputPassword2" placeholder="Search">
+          </div>
+          <br>
+          <span>Requested Data: <span style="font-weight: bold;" class="text-success">{{reqData1}}</span> </span>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">11. Concat Operator | concat()</h2>
+    <p>Subscribe to observables in order as previous completes</p>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Source - 01 | Tech Channel</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Tech Video List : </strong> 1,2,3,4,5
+          </p>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Source - 02 | Comedy Channel</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Comedy Video List : </strong>1,2,3
+          </p>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Source - 03 | News Channel</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>News Video List : </strong> 1,2,3,4
+          </p>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+    <hr>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Your Channel Subscriber
+          </div>
+          <div class="card-body">
+            <ul id="elContainer17">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+
+  <div class="row rowDesign">
+    <h2 class="title-text">12. Merge Operator | merge()</h2>
+    <p>Turn multiple observables into a single observable.</p>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Source - 01 | Tech Channel</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Tech Video List : </strong> 1,2,3,4,5
+          </p>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Source - 02 | Comedy Channel</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Comedy Video List : </strong>1,2,3
+          </p>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Source - 03 | News Channel</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>News Video List : </strong> 1,2,3,4
+          </p>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Your Channel Subscriber
+          </div>
+          <div class="card-body">
+            <ul id="elContainer18">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <br>
+  <hr>
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">13. MergeMap Operator | mergeMap()</h2>
+    <br>
+    <p>This operator is best used when you wish to flatten an inner observable but want to manually control the number
+      of inner subscriptions.</p>
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Ex - 01 | Map</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Videos : </strong> ['Tech','Comedy','News']
+          </p>
+          <hr>
+          <ul id="elContainer19">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Ex - 02 | Map + MergeAll</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Videos : </strong> ['Tech','Comedy','News']
+          </p>
+          <hr>
+          <ul id="elContainer20">
+          </ul>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Ex - 03 | mergeMap </strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Videos : </strong> ['Tech','Comedy','News']
+          </p>
+          <hr>
+          <ul id="elContainer21">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">14. ConcatMap Operator | concatMap() </h2>
+    <br>
+    <p>Projects each source value to an Observable which is merged in the output Observable, in a serialized fashion
+      waiting for each one to complete before merging the next.</p>
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Ex - 01 | Map</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Videos : </strong> ['Tech','Comedy','News']
+          </p>
+          <hr>
+          <ul id="elContainer22">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Ex - 02 | Map + concatAll</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Videos : </strong> ['Tech','Comedy','News']
+          </p>
+          <hr>
+          <ul id="elContainer23">
+          </ul>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Ex - 03 | concatMap </strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Videos : </strong> ['Tech','Comedy','News']
+          </p>
+          <hr>
+          <ul id="elContainer24">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">15. SwitchMap Operator | switchMap() </h2>
+    <br>
+    <p>- Projects each source value to an Observable which is merged in the output Observable, emitting values only from
+      the most recently projected Observable.</p>
+    <p>- Used to implpement search functionality to cancel the last request</p>
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Ex - 01 | Map</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Videos : </strong> ['Tech','Comedy','News']
+          </p>
+          <hr>
+          <ul id="elContainer25">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Ex - 02 | Map + switchAll</strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Videos : </strong> ['Tech','Comedy','News']
+          </p>
+          <hr>
+          <ul id="elContainer26">
+          </ul>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Ex - 03 | switchMap </strong>
+          <hr>
+          <p class="bg-light py-2 px-3 border rounded">
+            <strong>Videos : </strong> ['Tech','Comedy','News']
+          </p>
+          <hr>
+          <ul id="elContainer27">
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">16. ExhaustMap Operator | exhaustMap() </h2>
+    <br>
+    <p>Projects each source value to an Observable which is merged in the output Observable only if the previous
+      projected Observable has completed.</p>
+
+    <div class="col-12">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <strong>Exhaust Map</strong>
+          <hr>
+          <mat-progress-spinner *ngIf="progressSpinner" class="example-margin" [color]="color" [mode]="mode"
+            [value]="value">
+          </mat-progress-spinner>
+          <br>
+          <div>
+            <button class="btn btn-primary" #btn>Fetch data</button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">17. ShareReplay Operator | ShareReplay() </h2>
+    <br>
+    <p>Shares the source Observable and replays the last emissions for late subscribers.</p>
+
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <div class="col-4">
+            <h4>Data for user 1</h4>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">User No</th>
+                  <th scope="col">title</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of user1 | async">
+                  <th scope="row">{{item.userId}}</th>
+                  <td>{{item.title}}</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <div class="col-4">
+            <h4>Data for user 2</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">User No</th>
+                  <th scope="col">title</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of user2 | async">
+                  <th scope="row">{{item.userId}}</th>
+                  <td>{{item.title}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-4">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <br>
+          <div class="col-4">
+            <h4>Data for user 3</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">User No</th>
+                  <th scope="col">title</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of user3 | async">
+                  <th scope="row">{{item.userId}}</th>
+                  <td>{{item.title}}</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div>
+      <br>
+      <button class="btn btn-primary" (click)="fetchDataForShareReplay()">Fetch data </button>
+    </div>
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">18. CombineLatest & WithLatestFrom operator</h2>
+    <br>
+    <div class="row">
+      <div class="col-4">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <h4>Names</h4> <br>
+            <select #nameSelector>
+              <option value="{{item}}" *ngFor="let item of names">{{item}}</option>
+            </select>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-8">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <h4>CombineLatest</h4>
+            <br>
+            <div style="display: flex;" id="boxContainer1">
+            </div>
+
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-4">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <h4>Colors</h4> <br>
+            <select #colorSelector>
+              <option value="{{item}}" *ngFor="let item of colors">{{item}}</option>
+            </select>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-8">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <h4>WithLatestFrom</h4>
+            <br>
+            <div style="display: flex;" id="boxContainer2">
+            </div>
+
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">19. Zip & forkJoin operator</h2>
+    <br>
+
+    <div class="row">
+      <div class="col-4">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <h4>Names</h4> <br>
+            <select #nameSelector1>
+              <option value="{{item}}" *ngFor="let item of names">{{item}}</option>
+            </select>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-8">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <h4>Zip</h4>
+            <br>
+            <div style="display: flex;" id="boxContainer3"></div>
+
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-4">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <h4>Colors</h4> <br>
+            <select #colorSelector1>
+              <option value="{{item}}" *ngFor="let item of colors">{{item}}</option>
+            </select>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-8">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <h4>forkJoin</h4>
+            <br>
+            <div style="display: flex;" id="boxContainer4"></div>
+
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">20. CatchError & ThrowError </h2>
+    <br>
+    <div class="col-12">
+      <mat-card class="example-card">
+
+        <mat-card-content>
+          <mat-progress-spinner *ngIf="spinner" class="example-margin" [color]="color" [mode]="mode"
+            [value]="value">
+          </mat-progress-spinner>
+          <br>
+          <div>
+            <button class="btn btn-primary" (click)="fetchDataForCatchError()">Fetch data</button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+  <br>
+  <div class="row rowDesign">
+    <h2 class="title-text">21. Observable</h2>
+    <p>By default, observables are unicast and subjects are multicast.</p>
+    <div class="col-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Ex.1 Hot Observable | MULTICAST</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <br>
+          <ul id="hotObs"></ul>
+          <br>
+        
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Cold to Hot Observable | Using Subject </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <br>
+          <ul id="coldToHotObs"></ul>
+          <br>
+        
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Ex.1 Cold Observable | UNICAST</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <br>
+          <ul id="coldObs"></ul>
+          <br>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Ex.2 Cold Observable </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <br>
+          <ul id="coldObsWithTimer"></ul>
+          <br>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+
+
+  <br><br><br><br><br>
+
+</div>

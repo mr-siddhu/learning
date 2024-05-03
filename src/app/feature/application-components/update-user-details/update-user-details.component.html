@@ -1,0 +1,102 @@
+<app-navbar></app-navbar>
+
+<div class="container-sm" >
+    <div class="row">
+  
+      <!-- Update Form -->
+  
+      <div class="col-12" >
+        <mat-card class="example-card">
+          <form [formGroup]="updateForm">
+            <mat-card-header style="justify-content: center;
+            background: lightblue;
+            padding-bottom: 10px;">
+              <mat-card-title>Update Details</mat-card-title>
+            </mat-card-header>
+            <br>
+  
+            <mat-card-content>
+              <div class="row">
+                <div class="col-6">
+                  <mat-form-field appearance="fill">
+                    <mat-label>First Name</mat-label>
+                    <input  formControlName="first_name" matInput>
+                  </mat-form-field>
+                </div>
+
+                <div class="col-6">
+                  <mat-form-field appearance="fill">
+                    <mat-label>Last Name</mat-label>
+                    <input  formControlName="last_name" matInput>
+                  </mat-form-field>
+                </div>
+  
+               
+              </div>
+  
+  
+              <div class="row">
+                <div class="col-6">
+                  <mat-form-field appearance="fill">
+                    <mat-label>City</mat-label>
+                    <input  formControlName="city" matInput>
+                  </mat-form-field>
+                </div>
+  
+                <div class="col-6">
+                  <mat-form-field appearance="fill">
+                    <mat-label>State</mat-label>
+                    <input  formControlName="state" matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+  
+              <div class="row">
+  
+                <div class="col-6">
+                  <mat-form-field appearance="fill">
+                    <mat-label>Address</mat-label>
+                    <input  formControlName="address" matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-6">
+                  <mat-form-field appearance="fill">
+                    <mat-label>Zip</mat-label>
+                    <input  formControlName="zip" matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+  
+              <div class="row">
+  
+  
+                <div class="col-6">
+                  <mat-form-field appearance="fill">
+                    <mat-label>Mobile</mat-label>
+                    <input  formControlName="mobile" matInput>
+                  </mat-form-field>
+                </div>
+  
+                <div class="col-6">
+                  <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input  formControlName="email" matInput>
+                  </mat-form-field>
+                </div>
+  
+              </div>
+  
+  
+            </mat-card-content>
+  
+            <mat-card-actions>
+              <button (click)="updateDetails()" [disabled]="updateForm.invalid" mat-fab extended color="primary">Save Changes</button>
+              <button style="margin-left: 10px;" mat-fab extended color="primary" (click)="updateForm.reset()">Reset</button>
+              <button style="margin-left: 10px;" mat-fab extended color="warn" (click)="cancelUpdate()">Cancel</button>
+            </mat-card-actions>
+          </form>
+        </mat-card>
+      </div>
+  
+    </div>
+  </div>

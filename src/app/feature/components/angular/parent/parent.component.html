@@ -1,0 +1,50 @@
+<br>
+<div class="container">
+    <div class="row">
+        <h1 style="font-weight: bold;">1) ViewEncapsulation (Emulated,ShadowDom and None)</h1>
+        <br>
+        <ol>
+            <li>Emulated(default) - With ViewEncapsulation.Emulated your styles are scoped, but your component can still
+                consume global styles. However, you can’t apply styles to projected content.</li>
+
+            <li>ShadowDom - With ViewEncapsulation.ShadowDom your styles are scoped, but your component can not consume
+                global styles. However, you can apply styles to projected content.</li>
+
+            <li>None - With ViewEncapsulation.ShadowDom, css written will be global to all over application.</li>
+        </ol>
+        <br>
+        <div class="row">
+            <h2>Hello.. I am PARENT Component</h2>
+        </div>
+        <br><br>
+        <app-child list></app-child>
+        
+        
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        <h1 style="font-weight: bold;">2) HMR - Hot Module Reloading</h1>
+        <br>
+        <ol>
+            <li>While an application runs on the browser, we can add, remove, or exchange modules without a full reload. We call this process Hot Module Replacement (HMR). It saves valuable development time because it instantly updates only what's changed in the app when the source code changes.</li>
+            <li>Run <span style="font-weight: bold;">ng serve --hmr</span> to enable hot module reloading strategy</li>
+        </ol>
+    </div>
+</div>
+<hr>
+
+<hr>
+<div class="container">
+    <div class="row">
+        <h1 style="font-weight: bold;">3) ElementRef</h1>
+        <br>
+
+        <ul >
+            <li>Sid</li>
+            <li>Renuka</li>
+            <li>Shreyas</li>
+        </ul>
+    </div>
+</div>
